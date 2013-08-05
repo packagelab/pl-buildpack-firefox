@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# fail fast
+set -o errexit
+set -o nounset
+set -o pipefail
+
+scriptname=$(basename $0)
+
+cat <<EOT
+autoconf2.13
+build-essential
+libasound2-dev
+libcurl4-openssl-dev
+libdbus-1-dev
+libdbus-glib-1-dev
+libglib2.0-dev
+libgtk2.0-dev
+libgstreamer0.10-dev
+libgstreamer-plugins-base0.10-dev
+libiw-dev
+libnotify-dev
+libxt-dev
+mercurial
+mesa-common-dev
+uuid
+unzip
+yasm
+zip
+EOT
